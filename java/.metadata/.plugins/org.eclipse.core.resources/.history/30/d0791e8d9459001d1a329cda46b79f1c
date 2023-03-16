@@ -1,0 +1,74 @@
+package test;
+
+class student {
+	int no;
+	String name;
+	double chi;
+	double math;
+	double eng;
+	double ava;
+	double sum;
+
+	student(int no, String name, double chi, double math, double eng) {
+		this.no = no;
+		this.name = name;
+		this.chi = chi;
+		this.math = math;
+		this.eng = eng;
+	}
+
+	double chin() {
+		return chi;
+	}
+
+	double math() {
+		return math;
+	}
+
+	double eng() {
+		return eng;
+	}
+
+	double ava() {
+		double ava;
+		ava = (chi + math + eng) / 3;
+		return ava;
+	}
+
+	double sum() {
+		double sum;
+		sum = chi + math + eng;
+		return sum;
+	}
+
+	void input(int no,String name,double chi,double math,double eng,double ava,double sum) {
+		this.no = no;
+		this.name = name;
+		this.chi = chi;
+		this.math = math;
+		this.eng = eng;
+	}
+
+	void show() {
+
+	}
+}
+
+public class input_stu {
+
+	public static void main(String[] args) {
+				// TODO Auto-generated method stub
+				student[] stu = new student[5]; 	
+				stu[0] = new student(1001,"张三",95,100,90); 	
+				stu[1] = new student(1002,"lucy",80,90,100);
+				stu[2] = new student(1003,"john",99,98,98);
+				stu[3] = new student(1004,"王五",100,98,98);
+				stu[4] = new student(1005,"李柳",99,100,100);
+				System.out.println("学号\t" + "姓名\t"+"语文\t"+"数学\t"+"英语\t"+"总成绩\t"+"平均成绩");
+				for (int i = 0; i < stu.length; i++) { 
+					System.out.println(stu[i].no+"\t" + stu[i].name+"\t"+stu[i].chi+"\t"+stu[i].math()+"\t"+stu[i].eng()+"\t"+stu[i].sum()+"\t"+stu[i].ava());
+				}
+
+			}
+
+		}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将“test.encoder.run_X()”中的局部变量“xxxS”重命名为“xS”&#x0D;&#x0A;－ 原始项目：“java_test”&#x0D;&#x0A;－ 原始元素：“test.encoder.run_X().xxxS”&#x0D;&#x0A;－ 重命名的元素：“xxxS”&#x0D;&#x0A;－ 更新对已重构元素的引用" description="重命名局部变量“xxxS”" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;test{encode.java[encoder~run_X@xxxS!306!325!311!314!C!0!false" name="xS" references="true" stamp="1676991430463" version="1.0"/>
+</session>
