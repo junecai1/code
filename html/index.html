@@ -1,0 +1,544 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css">
+    <link rel="shortcut icon" href="image/moon.png">
+    <script src="./js/hovertreewelcome.js"></script>
+    <title>你好 访问者</title>
+    <style>
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+    </style>
+    <!-- <script>
+        function show() {
+            var string = ["不要怕，你终会遇见这么一个人，他会用整个人生将你精心收藏，用漫长岁月把你妥善安放。", "待自己温柔一点。你只不过是宇宙的孩子，与植物、星辰没什么两样。", "你看街上依旧繁花似锦，阳光依然璀璨温柔。", "总有一天，你会遇到一个彩虹般的人，从此以后，其他人不过是匆匆浮云。", "带着阳光出发，去遇见温暖；带着微笑前行，去遇见幸福，", "所有美好的不期而遇，都在路上。要永远坚信这一点，一切都会变得，无论受多大的创伤，心情多么沉重，一贫如洗也好，都要坚持住。", "太阳落了还会升起，不幸的日子总会有尽头。过去是这样，将来也是这样。在一切变好之前，我们总要经历一些不开心的日子，这段日子也许很长，也许只是一觉醒来，所以耐心点，给好运一点时间。", "这短短的一生，我们最终都会失去。你不妨大胆一些，爱一个人，攀一座山，追一个梦。你从不孤单。", "因为，这个世上肯定有一个人，在努力地走到你的身边。愿你一生被爱，一生可爱，三月拾花酿春，六月流萤染夏，十月稻陌拾秋，腊月丛中吻雪，一年四季，四季最好都赠你。", "我们常常看到的风景是、一个人总是仰望和羡慕着别人的幸福，一回头，却发现自己正被仰望和羡慕着。", "其实，每个人都是幸福的。只是，你的幸福，常常在别人眼里。", "不管你曾经被伤害得有多深，总会有一个人的出现，让你原谅之前生活对你所有的刁难。", "假如人生不曾相遇，我不会相信，有一种人可以百看不厌，有一种人一相遇就觉得温暖。", "坏情绪也不要都说给别人听，不管怎么样，夜晚你就睡觉吧，白天你就出去散散心，阴天你就吃好喝好，雨天你就听听雨。要记得，总有一天，会有一束阳光驱散你所有的阴霾，带给你万丈光芒。", "你真的很不错！", "立于皓月之边,不弱星光之势!"];
+            index = Math.floor(Math.random() * string.length) + 0;
+            document.getElementById('X').innerHTML = string[index];
+        }
+        document.onclick = function (event) {
+            var supreme = ["富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善"];
+            var i = 0;
+            sty = "<style>@keyframes myfirst{from {opacity:1.0;}to {transform:translateY(-1000%);opacity:0;}}@-moz-keyframes myfirst  {from {opacity:1.0;}to {transform:translateY(-1000%);opacity:0;}}@-webkit-keyframes myfirst {from {opacity:1.0;}to {transform:translateY(-1000%);opacity:0;}}@-o-keyframes myfirst {from {opacity:1.0;}to {transform:translateY(-1000%);opacity:0;}}.supreme{z - index: 9999999; position: fixed; font-weight: bold; color: rgb(255, 102, 81);font-size:14px;animation:myfirst 1.5s linear;cursor:default;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}</style>";
+            document.write(sty);
+            return function (event) {
+                var ev = event || window.event;
+                var e = document.createElement("span");
+                e.innerHTML = supreme[i++];
+                e.className = "supreme";
+                e.style.left = ev.clientX + "px";
+                e.style.top = ev.clientY - 14 + "px";
+                document.body.appendChild(e);
+                setTimeout(function () {
+                    document.body.removeChild(e)
+                }, 1400);
+                if (i > 11) {
+                    i = 0
+                }
+            }
+        }();
+    </script> -->
+</head>
+
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+    <div class="container bg-white border border-1">
+        <div class="row"><h1 class="h1">点击获取能量</h1></div>
+        <div class="row">
+            <div class="row">
+                <button onclick="show()" class="btn btn-danger col-6 m-auto">陌生人:</button>
+            </div>
+            <div class="row">
+                <h3 id="X" class="col border border-info border-5 rounded">你好啊~</h3>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+
+    // particlesJS('particles-js',
+    //   {
+    //     "particles": {
+    //       "number": {
+    //         "value": 110,
+    //         "density": {
+    //           "enable": true,
+    //           "value_area": 800
+    //         }
+    //       },
+    //       "color": {
+    //         "value": "#ffffff"
+    //       },
+    //       "shape": {
+    //         "type": "circle",
+    //         "stroke": {
+    //           "width": 0,
+    //           "color": "#000000"
+    //         },
+    //         "polygon": {
+    //           "nb_sides": 5
+    //         },
+    //         "image": {
+    //           "src": "img/github.svg",
+    //           "width": 100,
+    //           "height": 100
+    //         }
+    //       },
+    //       "opacity": {
+    //         "value": 0.5,
+    //         "random": false,
+    //         "anim": {
+    //           "enable": false,
+    //           "speed": 1,
+    //           "opacity_min": 0.1,
+    //           "sync": false
+    //         }
+    //       },
+    //       "size": {
+    //         "value": 1,
+    //         "random": true,
+    //         "anim": {
+    //           "enable": false,
+    //           "speed": 20,
+    //           "size_min": 0.1,
+    //           "sync": false
+    //         }
+    //       },
+    //       "line_linked": {
+    //         "enable": true,
+    //         "distance": 40,
+    //         "color": "#fff",
+    //         "opacity": 1,
+    //         "width": 1
+    //       },
+    //       "move": {
+    //         "enable": true,
+    //         "speed": 3,
+    //         "direction": "none",
+    //         "random": false,
+    //         "straight": false,
+    //         "out_mode": "out",
+    //         "attract": {
+    //           "enable": false,
+    //           "rotateX": 600,
+    //           "rotateY": 1200
+    //         }
+    //       }
+    //     },
+    //     "interactivity": {
+    //       "detect_on": "canvas",
+    //       "events": {
+    //         "onhover": {
+    //           "enable": true,
+    //           "mode": "grab"
+    //         },
+    //         "onclick": {
+    //           "enable": true,
+    //           "mode": "push"
+    //         },
+    //         "resize": true
+    //       },
+    //       "modes": {
+    //         "grab": {
+    //           "distance": 120,
+    //           "line_linked": {
+    //             "opacity": 1
+    //           }
+    //         },
+    //         "bubble": {
+    //           "distance": 400,
+    //           "size": 40,
+    //           "duration": 2,
+    //           "opacity": 8,
+    //           "speed": 3
+    //         },
+    //         "repulse": {
+    //           "distance": 300
+    //         },
+    //         "push": {
+    //           "particles_nb": 4
+    //         },
+    //         "remove": {
+    //           "particles_nb": 2
+    //         }
+    //       }
+    //     },
+    //     "retina_detect": true,
+    //     "config_demo": {
+    //       "hide_card": false,
+    //       "background_color": "#b61924",
+    //       "background_image": "",
+    //       "background_position": "50% 50%",
+    //       "background_repeat": "no-repeat",
+    //       "background_size": "cover"
+    //     }
+    //   }
+
+    // );
+
+
+    ; (function (window) {
+
+        var ctx,
+            hue,
+            logo,
+            form,
+            buffer,
+            target = {},
+            tendrils = [],
+            settings = {};
+
+        settings.debug = true;
+        settings.friction = 0.5;
+        settings.trails = 20;
+        settings.size = 50;
+        settings.dampening = 0.25;
+        settings.tension = 0.98;
+
+        Math.TWO_PI = Math.PI * 2;
+
+        // ========================================================================================
+        // Oscillator 何问起
+        // ----------------------------------------------------------------------------------------
+
+        function Oscillator(options) {
+            this.init(options || {});
+        }
+
+        Oscillator.prototype = (function () {
+
+            var value = 0;
+
+            return {
+
+                init: function (options) {
+                    this.phase = options.phase || 0;
+                    this.offset = options.offset || 0;
+                    this.frequency = options.frequency || 0.001;
+                    this.amplitude = options.amplitude || 1;
+                },
+
+                update: function () {
+                    this.phase += this.frequency;
+                    value = this.offset + Math.sin(this.phase) * this.amplitude;
+                    return value;
+                },
+
+                value: function () {
+                    return value;
+                }
+            };
+
+        })();
+
+
+        function Tendril(options) {
+            this.init(options || {});
+        }
+
+        Tendril.prototype = (function () {
+
+            function Node() {
+                this.x = 0;
+                this.y = 0;
+                this.vy = 0;
+                this.vx = 0;
+            }
+
+            return {
+
+                init: function (options) {
+
+                    this.spring = options.spring + (Math.random() * 0.1) - 0.05;
+                    this.friction = settings.friction + (Math.random() * 0.01) - 0.005;
+                    this.nodes = [];
+
+                    for (var i = 0, node; i < settings.size; i++) {
+
+                        node = new Node();
+                        node.x = target.x;
+                        node.y = target.y;
+
+                        this.nodes.push(node);
+                    }
+                },
+
+                update: function () {
+
+                    var spring = this.spring,
+                        node = this.nodes[0];
+
+                    node.vx += (target.x - node.x) * spring;
+                    node.vy += (target.y - node.y) * spring;
+
+                    for (var prev, i = 0, n = this.nodes.length; i < n; i++) {
+
+                        node = this.nodes[i];
+
+                        if (i > 0) {
+
+                            prev = this.nodes[i - 1];
+
+                            node.vx += (prev.x - node.x) * spring;
+                            node.vy += (prev.y - node.y) * spring;
+                            node.vx += prev.vx * settings.dampening;
+                            node.vy += prev.vy * settings.dampening;
+                        }
+
+                        node.vx *= this.friction;
+                        node.vy *= this.friction;
+                        node.x += node.vx;
+                        node.y += node.vy;
+
+                        spring *= settings.tension;
+                    }
+                },
+
+                draw: function () {
+
+                    var x = this.nodes[0].x,
+                        y = this.nodes[0].y,
+                        a, b;
+
+                    ctx.beginPath();
+                    ctx.moveTo(x, y);
+
+                    for (var i = 1, n = this.nodes.length - 2; i < n; i++) {
+
+                        a = this.nodes[i];
+                        b = this.nodes[i + 1];
+                        x = (a.x + b.x) * 0.5;
+                        y = (a.y + b.y) * 0.5;
+
+                        ctx.quadraticCurveTo(a.x, a.y, x, y);
+                    }
+
+                    a = this.nodes[i];
+                    b = this.nodes[i + 1];
+
+                    ctx.quadraticCurveTo(a.x, a.y, b.x, b.y);
+                    ctx.stroke();
+                    ctx.closePath();
+                }
+            };
+
+        })();
+
+        // ----------------------------------------------------------------------------------------
+
+        function init(event) {
+
+            document.removeEventListener('mousemove', init);
+            document.removeEventListener('touchstart', init);
+
+            document.addEventListener('mousemove', mousemove);
+            document.addEventListener('touchmove', mousemove);
+            document.addEventListener('touchstart', touchstart);
+
+            mousemove(event);
+            reset();
+            loop();
+        }
+
+        function reset() {
+
+            tendrils = [];
+
+            for (var i = 0; i < settings.trails; i++) {
+
+                tendrils.push(new Tendril({
+                    spring: 0.45 + 0.025 * (i / settings.trails)
+                }));
+            }
+        }
+
+        function loop() {
+
+            if (!ctx.running) return;
+
+            ctx.globalCompositeOperation = 'source-over';
+            ctx.fillStyle = 'rgba(8,5,16,0.4)';
+            ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+            ctx.globalCompositeOperation = 'lighter';
+            ctx.strokeStyle = 'hsla(' + Math.round(hue.update()) + ',90%,50%,0.25)';
+            ctx.lineWidth = 1;
+
+            if (ctx.frame % 60 == 0) {
+                console.log(hue.update(), Math.round(hue.update()), hue.phase, hue.offset, hue.frequency, hue.amplitude);
+            }
+
+            for (var i = 0, tendril; i < settings.trails; i++) {
+                tendril = tendrils[i];
+                tendril.update();
+                tendril.draw();
+            }
+
+            ctx.frame++;
+            ctx.stats.update();
+            requestAnimFrame(loop);
+        }
+
+        function resize() {
+            ctx.canvas.width = window.innerWidth;
+            ctx.canvas.height = window.innerHeight;
+        }
+
+        function start() {
+            if (!ctx.running) {
+                ctx.running = true;
+                loop();
+            }
+        }
+
+        function stop() {
+            ctx.running = false;
+        }
+
+        function mousemove(event) {
+            if (event.touches) {
+                target.x = event.touches[0].pageX;
+                target.y = event.touches[0].pageY;
+            } else {
+                target.x = event.clientX
+                target.y = event.clientY;
+            }
+            event.preventDefault();
+        }
+
+        function touchstart(event) {
+            if (event.touches.length == 1) {
+                target.x = event.touches[0].pageX;
+                target.y = event.touches[0].pageY;
+            }
+        }
+
+        function keyup(event) {
+
+            switch (event.keyCode) {
+                case 32:
+                    save();
+                    break;
+                default:
+                // console.log(event.keyCode); hovertree.com
+            }
+        }
+
+        function letters(id) {
+
+            var el = document.getElementById(id),
+                letters = el.innerHTML.replace('&amp;', '&').split(''),
+                heading = '';
+
+            for (var i = 0, n = letters.length, letter; i < n; i++) {
+                letter = letters[i].replace('&', '&amp');
+                heading += letter.trim() ? '<span class="letter-' + i + '">' + letter + '</span>' : '&nbsp;';
+            }
+
+            el.innerHTML = heading;
+            setTimeout(function () {
+                el.className = 'transition-in';
+            }, (Math.random() * 500) + 500);
+        }
+
+        function save() {
+
+            if (!buffer) {
+
+                buffer = document.createElement('canvas');
+                buffer.width = screen.availWidth;
+                buffer.height = screen.availHeight;
+                buffer.ctx = buffer.getContext('2d');
+
+                form = document.createElement('form');
+                form.method = 'post';
+                form.input = document.createElement('input');
+                form.input.type = 'hidden';
+                form.input.name = 'data';
+                form.appendChild(form.input);
+
+                document.body.appendChild(form);
+            }
+
+            buffer.ctx.fillStyle = 'rgba(8,5,16)';
+            buffer.ctx.fillRect(0, 0, buffer.width, buffer.height);
+
+            buffer.ctx.drawImage(canvas,
+                Math.round(buffer.width / 2 - canvas.width / 2),
+                Math.round(buffer.height / 2 - canvas.height / 2)
+            );
+
+            buffer.ctx.drawImage(logo,
+                Math.round(buffer.width / 2 - logo.width / 4),
+                Math.round(buffer.height / 2 - logo.height / 4),
+                logo.width / 2,
+                logo.height / 2
+            );
+
+            window.open(buffer.toDataURL(), 'wallpaper', 'top=0,left=0,width=' + buffer.width + ',height=' + buffer.height);
+
+            // form.input.value = buffer.toDataURL().substr(22);
+            // form.submit(); hovertree.com
+        }
+
+        window.requestAnimFrame = (function () {
+            return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (fn) { window.setTimeout(fn, 1000 / 60) };
+        })();
+
+        window.onload = function () {
+
+            ctx = document.getElementById('canvas').getContext('2d');
+            ctx.stats = new Stats();
+            ctx.running = true;
+            ctx.frame = 1;
+
+
+
+            hue = new Oscillator({
+                phase: Math.random() * Math.TWO_PI,
+                amplitude: 85,
+                frequency: 0.0015,
+                offset: 285
+            });
+
+
+
+            document.addEventListener('mousemove', init);
+            document.addEventListener('touchstart', init);
+            document.body.addEventListener('orientationchange', resize);
+            window.addEventListener('resize', resize);
+            window.addEventListener('keyup', keyup);
+            window.addEventListener('focus', start);
+            window.addEventListener('blur', stop);
+
+            resize();
+
+            if (window.DEBUG) {
+
+                var gui = new dat.GUI();
+
+                // gui.add(settings, 'debug');
+                settings.gui.add(settings, 'trails', 1, 30).onChange(reset);
+                settings.gui.add(settings, 'size', 25, 75).onFinishChange(reset);
+                settings.gui.add(settings, 'friction', 0.45, 0.55).onFinishChange(reset);
+                settings.gui.add(settings, 'dampening', 0.01, 0.4).onFinishChange(reset);
+                settings.gui.add(settings, 'tension', 0.95, 0.999).onFinishChange(reset);
+
+                document.body.appendChild(ctx.stats.domElement);
+            }
+        };
+
+    })(window);
+
+</script>
+</body>
+
+</html>

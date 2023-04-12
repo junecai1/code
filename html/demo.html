@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <script>
+        document.onclick = function (event) {
+                var supreme = ["富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善"];
+                var i = 0;
+                sty = "<style>@keyframes myfirst{from {opacity:1.0;}to {transform:translateY(-1000%);opacity:0;}}@-moz-keyframes myfirst {from {opacity:1.0;}to {transform:translateY(-1000%);opacity:0;}}@-webkit-keyframes myfirst {from {opacity:1.0;}to {transform:translateY(-1000%);opacity:0;}}@-o-keyframes myfirst {from {opacity:1.0;}to {transform:translateY(-1000%);opacity:0;}}.supreme{z-index: 9999999; position: fixed; font-weight: bold; color: rgb(255, 102, 81);font-size:14px;animation:myfirst 1.5s linear;cursor:default;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}</style>";
+                document.write(sty);
+                return function (event) {
+                    var ev = event || window.event;
+                    var e = document.createElement("span");
+                    e.innerHTML = supreme[i++];
+                    e.className = "supreme";
+                    e.style.left = ev.clientX + "px";
+                    e.style.top = ev.clientY - 14 + "px";
+                    document.body.appendChild(e);
+                    setTimeout(function () {
+                        document.body.removeChild(e)
+                    }, 1400);
+                    if (i > 11) {
+                        i = 0
+                    }
+                }
+            }();
+    </script>
+</body>
+</html>
